@@ -12,6 +12,7 @@ Projeto prático de implementação back end - Seleção para estágio na empres
 -Ative o ambiente virtual Python:
 
 . cmd Windows : sn_AmbienteVirtual\Scripts\activate
+
 . gitbash : source sn_AmbienteVirtual/Scripts/activate
 
 
