@@ -16,10 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from gestao_BiblioTech.views import UserList, UserDetail
+from gestao_BiblioTech.views import ListaUsuarios, DetalhesUsuario, ListaEmprestimos, DetalhesEmprestimo, ListaLivros, DetalhesLivro
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('users/', UserList.as_view(), name='user-list'),
-    path('users/<int:pk>/', UserDetail.as_view(), name='user-detail'),
+    path('usuarios/', ListaUsuarios.as_view(), name='usuario-list'),
+    path('usuarios/<int:pk>/', DetalhesUsuario.as_view(), name='usuario-detail'),
+    path('emprestimos/', ListaEmprestimos.as_view(), name='emprestimo-list'),
+    path('emprestimos/<int:pk>/', DetalhesEmprestimo.as_view(), name='emprestimo-detail'),
+    path('livros/', ListaLivros.as_view(), name='livro-list'),
+    path('livros/<int:pk>/', DetalhesLivro.as_view(), name='livro-detail'),
 ]
