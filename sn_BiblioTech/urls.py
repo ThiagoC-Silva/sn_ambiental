@@ -27,4 +27,5 @@ urlpatterns = [
     path('livros/', ListaLivros.as_view(), name='livro-list'),
     path('livros/<int:pk>/', DetalhesLivro.as_view(), name='livro-detail'),
     
+    
 ]
