@@ -60,5 +60,5 @@ python manage.py runserver
 
 # DECLARAÇÃO:
 
-Sou acadêmico do primeiro período em Análise e Desenvolvimento de Sistemas 2023.1 no IFPI - Campus parnaíba. Minha base até iniciar o projeto se resumia a HTML, CSS, lógica de programação e JavaScript. Por isso, com o tempo que tive disponível de estudo, esse foi o máximo que pude extrair da implementação do que foi pedido no teste. Mesmo sem conhecimento prévio sobre grande parte do conteúdo,  acredito que esse esforço para concluir possa ser válido. Aprendi muito, e se, por consequência, ser selceionado para a vaga, creio que irei aprender muito mais.
+Sou acadêmico do primeiro período em Análise e Desenvolvimento de Sistemas 2023.1 no IFPI - Campus parnaíba. Minha base até iniciar o projeto se resumia a HTML, CSS, lógica de programação e JavaScript. Por isso, com o tempo que tive disponível de estudo, esse foi o máximo que pude extrair da implementação do que foi pedido no teste. Mesmo sem conhecimento prévio sobre grande parte do conteúdo,  acredito que esse esforço para concluir possa ser válido. Aprendi muito, e se, por consequência, ser selecionado para a vaga, creio que irei aprender muito mais.
 
