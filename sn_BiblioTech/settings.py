@@ -77,8 +77,13 @@ WSGI_APPLICATION = 'sn_BiblioTech.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'bibliotech_database',
+        'USER': 'root',
+        'PASSWORD': 'ads2000',
+        'HOST': 'localhost',
+        'PORT': ' 3306 ',
+
     }
 }
 
