@@ -8,12 +8,12 @@ from .serializers import UsuarioSerializer, EmprestimoSerializer, LivroSerialize
 class ListaUsuarios(generics.ListCreateAPIView):
     queryset = Usuario.objects.all()
     serializer_class = UsuarioSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    #permission_classes = [permissions.IsAuthenticated]
 
 class DetalhesUsuario(generics.RetrieveUpdateDestroyAPIView):
     queryset = Usuario.objects.all()
     serializer_class = UsuarioSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    #permission_classes = [permissions.IsAuthenticated]
 
 class ListaEmprestimos(generics.ListCreateAPIView):
     queryset = Emprestimo.objects.all()

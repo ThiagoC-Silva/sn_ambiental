@@ -26,4 +26,5 @@ urlpatterns = [
     path('emprestimos/<int:pk>/', DetalhesEmprestimo.as_view(), name='emprestimo-detail'),
     path('livros/', ListaLivros.as_view(), name='livro-list'),
     path('livros/<int:pk>/', DetalhesLivro.as_view(), name='livro-detail'),
+    
 ]
