@@ -18,6 +18,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+#views necessárias onde tem as funções:
 from app_telaInicial import views
 
 urlpatterns = [
@@ -25,5 +26,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #página inicial:
     path('', views.home, name='home'),
+    #página usuários:
+    #
+    #
 
 ]

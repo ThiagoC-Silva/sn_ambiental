@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app_telaInicial',
+    'app_usuario',
+    'app_emprestimo',
+    'app_livro',
 ]
 
 MIDDLEWARE = [
