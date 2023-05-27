@@ -14,18 +14,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+#DEFINIR QUAIS SERÃO AS ROTAS
+
 from django.contrib import admin
 from django.urls import path
-from gestao_BiblioTech.views import ListaUsuarios, DetalhesUsuario, ListaEmprestimos, DetalhesEmprestimo, ListaLivros, DetalhesLivro
+from app_telaInicial import views
 
 urlpatterns = [
+    # rota, view resposável, nome de referência
     path('admin/', admin.site.urls),
-    path('usuarios/', ListaUsuarios.as_view(), name='usuario-list'),
-    path('usuarios/<int:pk>/', DetalhesUsuario.as_view(), name='usuario-detail'),
-    path('emprestimos/', ListaEmprestimos.as_view(), name='emprestimo-list'),
-    path('emprestimos/<int:pk>/', DetalhesEmprestimo.as_view(), name='emprestimo-detail'),
-    path('livros/', ListaLivros.as_view(), name='livro-list'),
-    path('livros/<int:pk>/', DetalhesLivro.as_view(), name='livro-detail'),
-    
-    
+    #página inicial:
+    path('', views.home, name='home'),
+
 ]
