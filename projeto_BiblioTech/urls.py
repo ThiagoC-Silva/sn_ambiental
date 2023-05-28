@@ -15,19 +15,27 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 #DEFINIR QUAIS SERÃO AS ROTAS
-
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from app_livro.api import viewsets as livrosviewsets
+
+#INCLUIR TODAS AS ROTAS DO PROJETO EM UMA ROTA BASE
+from rest_framework import routers
+route = routers.DefaultRouter()
+route.register(r'livros', livrosviewsets.LivrosViewSet, basename='livros' )
+
 #views necessárias onde tem as funções:
 from app_telaInicial import views
 
 urlpatterns = [
-    # rota, view resposável, nome de referência
+    # ROTA, VIEW RESPONSÁVEL, NOME DE REFERÊNCIA
     path('admin/', admin.site.urls),
-    #página inicial:
+    #PÁGINA INICIAL:
     path('', views.home, name='home'),
-    #página usuários:
-    #
-    #
+
+    #OBEJTO ROUTE
+    path('', include(route.urls))
+    
+
 
 ]
