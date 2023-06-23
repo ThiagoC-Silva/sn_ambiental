@@ -1,7 +1,7 @@
 from ninja import NinjaAPI
 
 #BOOKS
-from books import router as books_router
+from books.api import router as books_router
 
 api = NinjaAPI()
 
